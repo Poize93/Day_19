@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Twitter</title>
+    <style>
+        .tweet{
+            font-size: 2rem;
+        }
+
+        .counter{
+            font-size:2rem;
+        }
+    </style>
+</head>
+<body>
+
+<textarea  placeholder="What's happening?" class="tweet" rows="10" col="20" oninput="count(event)" maxlength="20"></textarea>
+<span class="counter">0/20</span>
+<script src="tweet.js"></script>
+    
+</body>
+</html>
