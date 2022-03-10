@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="StyleSheet" href="form.css">
+</head>
+<body>
+    <!-- First Name , Last Name , address , PinCode , gender , choice of food , state and country -->
+
+    <div class="container">
+
+    <!-- ///////Name -->
+    <p class="heading"> Name</p>
+        <div class="details">
+           
+            <div>
+               
+                <textarea class="first" id="comments"> </textarea>
+                <p class="sub-heading">First Name</p>
+            </div>
+
+            <div>
+                <textarea class="last" id="comments"> </textarea>
+                <p class="sub-heading">Last Name</p>
+            </div>
+        </div>
+
+        <!--Addresss  -->
+        <p class="heading"> Contact</p>
+        <div class="details">
+           
+            <div>
+               <textarea class="address" id="comments"></textarea>
+               <p class="sub-heading">Address</p>
+            </div>
+
+            <div>
+                <textarea class="pincode" id="comments"></textarea>
+                <p class="sub-heading">Pincode</p>
+            </div>
+        </div>
+      
+      
+        <!-- Gender -->
+        <p class="heading"> Gender</p>
+        <div class="details-gender">
+           
+            <input type="radio" class="gender" name="gender" value="Male">Male
+            <input type="radio" class="gender" name="gender" value="Female" >Female
+        </div>
+
+        <!-- Food -->
+        <p class="heading"> Favourite Food</p>
+        <div class="food">
+           
+                <div>    <input type="checkbox" class="fud" value="Burger">Burger  </div>
+                <div>    <input type="checkbox" class="fud" value="Pizza">Pizza   </div>
+                <div>    <input type="checkbox" class="fud" value="Idli" >Idli    </div>
+                <div>    <input type="checkbox" class="fud" value="Paya-Sam" >Paya-Sam</div>
+                <div>    <input type="checkbox" class="fud" value="Rice">Rice    </div>
+        </div>
+        
+        <!--Nationality  -->
+        <p class="heading"> Nationality</p>
+        <div class="details">
+           
+            <div>
+               
+                <textarea class="country" id="comments"></textarea>
+                <p class="sub-heading">Country</p>
+            </div>
+
+            <div>
+                <textarea class="state" id="comments"> </textarea>
+                <p class="sub-heading">State</p>
+            </div>
+        </div>
+        
+        <!-- <div class="button" id="submit"> -->
+        <button class="button   " id="submit"  onclick="fetchDetails()">Add Details</button>
+
+        
+        
+        </div>
+    </div>
+    
+    </div>
+   
+    </div>
+    
+    
+
+    <div class="details">
+        <table class="table">
+            <tr class="header"> 
+                <th style="border-right:1px solid black">FirstName</th>
+                <th style="border-right:1px solid black">LastName</th>
+                <th style="border-right:1px solid black">Address</th>
+                <th style="border-right:1px solid black">Pincode</th>
+                <th style="border-right:1px solid black">Gender</th>
+                <th style="border-right:1px solid black">Favourite_Food</th>
+                <th style="border-right:1px solid black">Country</th>
+                <th style="border-right:1px solid black">State</th>
+              </tr>
+        </table>
+    </div>
+
+    <script src="form.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+
+</body>
+</html>
